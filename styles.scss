@@ -26,17 +26,45 @@ $desktop: unquoteunquote("only screen and (min-width: 961px) and (max-width: 120
 $muli: 'Muli', Muli, sans-serif;
 
 // MAIN
-
+	* {
+		font-family: $muli;
+		box-sizing: border-box;
+		margin: 0; 
+		border: 0;
+		outline: 0;
+	}
 
      .page_content {
          width: 100%;
          display: flex;
          margin-left: 0;
+         font-family: $muli;
+         h1 {
+         	font-style: italic; 
+         	font-weight: 800;
+         	font-size: 48px; 
+         }
+		 h2 {
+		 	font-weight: 600;
+		 	font-size: 36px;
+		 }
+		 h3 {
+		 	font-weight: 400;
+		 	font-size: 32px;
+		 }
+		 h4 {
+		 	font-weight: 200;
+		 	font-size: 36px;
+		 }
+		 .button {
+		 	color: $darkPurple;
+		 	font-size: 20px;
+		 }
          .left_nav {
              width: 20%;
              margin-right: 1%;
              background-color: $gray;
-             padding: 20px;
+             padding: 15px;
              overflow-wrap: break-word;
              .logo_img {
                  width: 75%;
@@ -46,20 +74,21 @@ $muli: 'Muli', Muli, sans-serif;
              }
              .title {
                  margin-top: 20px;
-                 font-family: $muli;
-                 font-size: 2.4rem;
-                 font-weight: 700;
+                 font-size: 24px;
+                 font-weight: 400;
                  margin-bottom: 0;
+                 color: $textWhite;
              }
              .title-2 {
                  margin-bottom: 30px;
-                 font-family: $muli;
-                 font-size: 1.8rem;
-                 font-weight: 700;
+                 font-size: 18px;
+                 font-weight: 100;
+                 color: $textWhite;
              }
              .nav_items {
                  list-style: none;
                  margin: 20px 0;
+                 padding: 0;
                  li:not(:first-child) {
                      border-top: $border;
                  }
@@ -72,10 +101,9 @@ $muli: 'Muli', Muli, sans-serif;
                  }
                  a {
                      text-decoration: none;
-                     font-size: 1.8rem;
-                     font-family: $muli;
-                     color: $text;
-                     font-weight: 300;
+                     font-size: 18px;
+                     color: $textWhite;
+                     font-weight: 200;
                  }
              }
          }
@@ -207,12 +235,12 @@ $muli: 'Muli', Muli, sans-serif;
                      text-decoration: none;
                  }
                  .item:before {
-                     content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/number_bg_prpl.png");
+                     content: url(Images/shape_maroon.png);
                      float: left;
                      margin-right: 10px;
                  }
                  .blue:before {
-                     content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/number_small_teal.png");
+                     content: url(Images/shape_blue_small.png);
                      float: left;
                      margin-right: 10px;
                  }
