@@ -57,11 +57,19 @@ $muli: 'Muli', Muli, sans-serif;
 		 	font-size: 36px;
 		 }
 		 .button {
-		 	color: $darkPurple;
+		 	background-color: $darkPurple;
 		 	font-size: 20px;
+		 	border-radius: 10px;
+		 	color: $textWhite;
+		 	width: 200px;
+		 	height: 40px;
+		 	font-weight: 800px;
+		 	text-decoration: none;
+		 	text-align: center; 
 		 }
          .left_nav {
              width: 20%;
+             min-height: 800px;
              margin-right: 1%;
              background-color: $gray;
              padding: 15px;
@@ -217,8 +225,13 @@ $muli: 'Muli', Muli, sans-serif;
                      position: relative;
                  }
                  .position {
-                     line-height: 4rem;
-                     margin: 0;
+                     line-height: 40px;
+                     margin-bottom: 5px;
+                 }
+                 .position2 {
+                     line-height: 22px;
+                     max-width: 600px;
+                     margin-bottom: 5px;
                  }
                  .module_callOut {
                      width: 90%;
@@ -229,8 +242,8 @@ $muli: 'Muli', Muli, sans-serif;
                      display: block;
                      margin: 4px 9px;
                      color: #fff;
-                     font-weight: 700;
-                     font-size: 1.8rem;
+                     font-weight: 600;
+                     font-size: 20px;
                      font-family: $muli;
                      text-decoration: none;
                  }
@@ -261,7 +274,7 @@ $muli: 'Muli', Muli, sans-serif;
          overflow-wrap: break-word;
          font-family: $muli;
          .blue_item:before {
-             content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/number_bg_teal.png");
+             content: url(Images/shape_blue.png);
              float: left;
              width: 100%;
          }
@@ -534,12 +547,11 @@ $muli: 'Muli', Muli, sans-serif;
                          margin: 0;
                      }
                      .item:before {
-                         content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/number_bg_prpl.png");
-                         float: left;
+                         content: url(Images/shape_maroon.png);
                          margin-right: 10px;
                      }
                      .blue:before {
-                         content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/number_small_teal.png");
+                         content: url(Images/shape_blue_small.png);
                          float: left;
                          margin-right: 10px;
                      }
