@@ -5,5 +5,569 @@
 $darkPurple: #3D2645;
 $teal: #6DD3CE; 
 $maroon: #750D37;
+$gray: #949494;
 $text: #000;
 $textWhite: #fff; 
+
+$border: 1px solid black;
+
+
+// SCREEN SIZE
+
+$mobile-down: unquote("only screen and (max-width: 640px)");
+$tablet: unquote("only screen and (min-width: 641px) and (max-width: 940px)");
+$desktop: unquoteunquote("only screen and (min-width: 961px) and (max-width: 1200px)");
+
+
+// FONTS
+
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,600,800");
+
+$muli: 'Muli', Muli, sans-serif;
+
+// MAIN
+
+
+     .page_content {
+         width: 100%;
+         display: flex;
+         margin-left: 0;
+         .left_nav {
+             width: 20%;
+             margin-right: 1%;
+             background-color: $gray;
+             padding: 20px;
+             overflow-wrap: break-word;
+             .logo_img {
+                 width: 75%;
+                 display: block;
+                 margin: 0 auto;
+                 padding-bottom: 30px;
+             }
+             .title {
+                 margin-top: 20px;
+                 font-family: $muli;
+                 font-size: 2.4rem;
+                 font-weight: 700;
+                 margin-bottom: 0;
+             }
+             .title-2 {
+                 margin-bottom: 30px;
+                 font-family: $muli;
+                 font-size: 1.8rem;
+                 font-weight: 700;
+             }
+             .nav_items {
+                 list-style: none;
+                 margin: 20px 0;
+                 li:not(:first-child) {
+                     border-top: $border;
+                 }
+                 .active {
+                     font-weight: 500;
+                     font-size: 2rem;
+                 }
+                 li {
+                     padding: 10px 0;
+                 }
+                 a {
+                     text-decoration: none;
+                     font-size: 1.8rem;
+                     font-family: $muli;
+                     color: $text;
+                     font-weight: 300;
+                 }
+             }
+         }
+
+         .asset_main2 {
+             width: 70% !important;
+             .zoom_feature_link:before,
+             .zoom_feature_link.quarter_two:before {
+                 right: 13% !important;
+             }
+             .zoom_feature_link.quarter:before {
+                 right: 23% !important;
+             }
+             .zoom_feature_link.quarter_three:before {
+                    right: 23% !important;
+              }
+             .zoom_feature_link.half:before {
+                 right: 52% !important;
+             }
+             .zoom_feature_link.less:before {
+                 right: 2% !important;
+             }
+             .zoom_feature_link.more:before {
+                 right: 58% !important;
+             }
+         }
+
+         .assets_main {
+             width: 100%;
+             padding: 20px 10px;
+             .main_title {
+                 margin-top: 20px;
+                 margin-bottom: 0;
+                 padding-bottom: 10px;
+                 border-bottom: $border;
+             }
+             .smaller_italic {
+                 font-size: 1.4rem;
+                 font-style: italic;
+                 padding-top: 5px;
+             }
+             .image_size {
+                 max-width: 80%;
+             }
+             .assetImage {
+                 width: 100%;
+             }
+             .asset_list_top {
+                 margin-left: 70px;
+                 .image_size {
+                     max-width: 83%;
+                 }
+                 .desktop_view {
+                     width: 50%;
+                 }
+             }
+             .change_display_desktop {
+                 display: block !important;
+             }
+             .asset_zoom_link {
+                 position: relative;
+                 .zoom_feature_link:before {
+                     content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/ZoomIcon.png");
+                     position: absolute;
+                     display: block;
+                     bottom: 10px;
+                     right: 19%;
+                 }
+                 .zoom_feature_link.half:before {
+                     right: 54%;
+                 }
+                 .zoom_feature_link.quarter:before {
+                     right: 47%;
+                 }
+                 .zoom_feature_link.quarter_two:before {
+                     right: 39%;
+                 }
+                 .zoom_feature_link.quarter_three:before {
+                    right: 23%;
+                 }
+                 .zoom_feature_link.less:before {
+                     right: 2%;
+                 }
+                 .zoom_feature_link.more:before {
+                     right: 76%;
+                 }
+             }
+             .width_100 {
+                 max-width: 100%;
+             }
+             .zoom_icon {
+                 position: absolute;
+                 bottom: 10px;
+                 right: 1%;
+                 width: 40px;
+             }
+             .asset_list {
+                 display: flex;
+                 margin: 15px 10px;
+                 .numbers {
+                     display: flex;
+                     flex-direction: column;
+                 }
+                 .click {
+                     position: fixed;
+                 }
+                 .column {
+                     display: inline-block;
+                 }
+                 .item {
+                     position: relative;
+                 }
+                 .position {
+                     line-height: 4rem;
+                     margin: 0;
+                 }
+                 .module_callOut {
+                     width: 90%;
+                     margin: 10px 0;
+                 }
+                 .number_link {
+                     position: absolute;
+                     display: block;
+                     margin: 4px 9px;
+                     color: #fff;
+                     font-weight: 700;
+                     font-size: 1.8rem;
+                     font-family: $muli;
+                     text-decoration: none;
+                 }
+                 .item:before {
+                     content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/number_bg_prpl.png");
+                     float: left;
+                     margin-right: 10px;
+                 }
+                 .blue:before {
+                     content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/number_small_teal.png");
+                     float: left;
+                     margin-right: 10px;
+                 }
+             }
+         }
+     }
+
+     .column_hidden {
+         display: none;
+     }
+
+     .right_column {
+         display: block;
+         width: 29%;
+         margin-left: 1%;
+         background-color: $gray;
+         padding: 20px;
+         overflow-wrap: break-word;
+         font-family: $muli;
+         .blue_item:before {
+             content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/number_bg_teal.png");
+             float: left;
+             width: 100%;
+         }
+         .show_item {
+             position: fixed;
+             margin-top: 0px;
+             padding-right: 20px;
+         }
+         .number {
+             position: absolute;
+             display: block;
+             margin: 20px 21px;
+             color: #fff;
+             font-weight: 700;
+             font-size: 32px;
+             font-family: $muli;
+         }
+
+         .side_heading {
+             font-size: 3rem;
+             line-height: 3.2rem;
+             font-weight: 300;
+             font-style: italic;
+             margin-bottom: 10px;
+         }
+
+         .side_bold {
+             font-size: 2rem;
+             font-weight: 500;
+             font-style: italic;
+         }
+         .light {
+             font-size: 1.6rem;
+             line-height: 1.8rem;
+             font-weight: 300;
+             font-style: italic;
+             margin-bottom: 10px;
+         }
+         #exit {
+             display: block;
+             margin-top: 0px;
+             .exit_image {
+                 position: fixed;
+                 height: 30px;
+             }
+             .exit {
+                 position: fixed;
+                 z-index: 5;
+                 margin-left: 17%;
+             }
+         }
+     }
+
+     @media only screen and (min-width: 1024px) {
+         .page_content {
+             .right_column {
+                 .show_item {
+                     position: fixed;
+                     margin-top: 0px;
+                     padding-right: 70px;
+                 }
+             }
+         }
+     }
+
+     @media #{$tablet} {
+         .page_content {
+             .left_nav_2 {
+                 width: 18% !important;
+             }
+             .left_nav {
+                 width: 25%;
+                 margin-right: 1%;
+                 .logo_img {
+                     width: 90%;
+                 }
+                 .title {
+                     margin: 0;
+                     font-size: 2rem;
+                 }
+                 .title-2 {
+                     font-size: 1.6rem;
+                 }
+             }
+             .asset_main2 {
+                 width: 64% !important;
+                 .zoom_feature_link:before,
+                 .zoom_feature_link.quarter:before,
+                 .zoom_feature_link.quarter_two:before,
+                 .zoom_feature_link.half:before {
+                     right: 7% !important;
+                 }
+                 .zoom_feature_link.less:before {
+                     right: 2% !important;
+                 }
+                 .zoom_feature_link.more:before {
+                     right: 58% !important;
+                 }
+             }
+             .assets_main {
+                 width: 100%;
+                 .asset_zoom_link {
+                     position: relative;
+                     .zoom_feature_link:before {
+                         right: 13%;
+                     }
+                     .zoom_feature_link.quarter_two:before,
+                     .zoom_feature_link.less:before,
+                     .zoom_feature_link.quarter:before {
+                         right: 11%;
+                     }
+                     .zoom_feature_link.half:before {
+                         right: 52%;
+                     }
+                     .zoom_feature_link.more:before {
+                         right: 30%;
+                     }
+                 }
+                 .asset_list {
+                     display: flex;
+                     margin: 15px 10px;
+                     .module_callOut {
+                         width: 90%;
+                         margin: 10px 0;
+                     }
+                 }
+             }
+         }
+
+         .column_hidden {
+             display: none;
+         }
+
+         .right_column {
+             display: block;
+             width: 35%;
+             margin-left: 1%;
+             background-color: $gray;
+             padding: 20px;
+             overflow-wrap: break-word;
+             font-family: $muli;
+             .show_item {
+                 position: fixed;
+                 margin-top: 0px;
+                 padding-right: 20px;
+             }
+             .number {
+                 position: absolute;
+                 display: block;
+                 margin: 20px 25px;
+                 color: #fff;
+                 font-weight: 700;
+                 font-size: 32px;
+                 font-family: $muli;
+             }
+             .side_heading {
+                 font-size: 2.8rem;
+                 line-height: 3.2rem;
+                 margin-bottom: 10px;
+             }
+             .side_bold {
+                 font-size: 1.8rem;
+             }
+             .light {
+                 font-size: 1.4rem;
+                 line-height: 16px;
+                 margin-bottom: 5px;
+             }
+             #exit {
+                 .exit {
+                     margin-left: 20%;
+                 }
+             }
+         }
+     }
+
+     @media #{$mobile-down} {
+         .page_content {
+             display: block;
+             .left_nav {
+                 width: 100%;
+                 .logo_img {
+                     width: 40%;
+                     float: left;
+                     margin-right: 20px;
+                     padding-bottom: 0;
+                 }
+                 .title {
+                     font-size: 2.2rem;
+                 }
+                 .title-2 {
+                     font-size: 1.8rem;
+                     margin-bottom: 17%;
+                 }
+                 .active {
+                     font-weight: 500;
+                     font-size: 2rem;
+                 }
+                 .nav_items {
+                     width: 100%;
+                     margin: 0;
+                     li {
+                         text-decoration: none;
+                         font-size: 2rem;
+                         .active {
+                             font-weight: 500;
+                             font-size: 2rem;
+                         }
+                     }
+                 }
+             }
+             .asset_main2 {
+                 width: 100% !important;
+                 .zoom_feature_link:before,
+                 .zoom_feature_link.quarter:before,
+                 .zoom_feature_link.quarter_two:before,
+                 .zoom_feature_link.less:before,
+                 .zoom_feature_link.half:before {
+                     right: 2% !important;
+                 }
+                 .zoom_feature_link.more:before {
+                     right: 30% !important;
+                 }
+             }
+             .assets_main {
+                 width: 100%;
+                 .main_title {
+                     margin-top: 0px;
+                     margin-bottom: 10px;
+                     padding-bottom: 10px;
+                 }
+                 .asset_list_top {
+                     margin-left: 0;
+                 }
+                 .change_display {
+                     display: block !important;
+                 }
+                 .image_size {
+                     max-width: 100%;
+                 }
+                 .asset_list_top {
+                     .image_size {
+                         max-width: 100%;
+                     }
+                     .desktop_view {
+                         width: 100%;
+                     }
+                 }
+                 .asset_zoom_link {
+                     position: relative;
+                     .zoom_feature_link:before,
+                     .zoom_feature_link.quarter:before,
+                     .zoom_feature_link.quarter_two:before,
+                     .zoom_feature_link.less:before,
+                     .zoom_feature_link.half:before {
+                         right: 2%;
+                     }
+                     .zoom_feature_link.more:before {
+                         right: 30%;
+                     }
+                 }
+                 .asset_list {
+                     display: flex;
+                     margin: 15px 10px;
+                     .column {
+                         display: block;
+                     }
+                     .position {
+                         line-height: 4rem;
+                         margin: 0;
+                     }
+                     .item:before {
+                         content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/number_bg_prpl.png");
+                         float: left;
+                         margin-right: 10px;
+                     }
+                     .blue:before {
+                         content: url("/ohiolottery/media/ContentImages/AssetsStyleguide/number_small_teal.png");
+                         float: left;
+                         margin-right: 10px;
+                     }
+                 }
+             }
+         }
+
+         .column_hidden {
+             display: none;
+         }
+
+         .right_column {
+             display: block;
+             width: 100%;
+             margin-left: 0;
+             .blue_item:before {
+                 display: none;
+             }
+             .show_item {
+                 position: inherit;
+                 margin-bottom: 10px;
+                 padding-right: 0px;
+                 padding-bottom: 10px;
+             }
+             .number {
+                 display: none;
+             }
+             .side_heading {
+                 font-size: 3rem;
+                 line-height: 3.2rem;
+                 color: $darkPurple;
+                 font-weight: 300;
+             }
+             .side_bold {
+                 font-size: 2rem;
+             }
+             .light {
+                 font-size: 1.8rem;
+             }
+             #exit {
+                 display: block;
+                 margin-top: 0px;
+                 text-align: right;
+                 .exit_image {
+                     position: inherit;
+                 }
+                 .exit {
+                     position: inherit;
+                     margin-left: 0;
+                 }
+             }
+         }
+     }
+
+     .DesignMode .column_hidden,
+     .EditMode .column_hidden {
+         display: block !important;
+     }
+
